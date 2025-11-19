@@ -1,0 +1,5 @@
+ID|Date|Status|Notes|ObservationsMedecin|DateCreation|DateMiseAJour|CreePar|ModifierPar
+1|2025-01-15T09:00:00|TERMINEE|Consultation de routine|Patient en bonne santé dentaire|2025-01-15T08:00:00|null|medecin1|null
+2|2025-01-15T10:30:00|EN_COURS|Détartrage|En cours de traitement|2025-01-15T09:00:00|null|medecin1|null
+3|2025-01-15T14:00:00|PLANIFIEE|Contrôle annuel|null|2025-01-15T10:00:00|null|secretaire1|null
+
