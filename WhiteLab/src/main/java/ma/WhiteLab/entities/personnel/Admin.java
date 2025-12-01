@@ -9,7 +9,6 @@ import ma.WhiteLab.entities.user.Utilisateur;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
 @SuperBuilder
 @EqualsAndHashCode(callSuper = true)
 public class Admin extends Utilisateur {

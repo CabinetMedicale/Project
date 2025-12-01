@@ -105,8 +105,8 @@ Chaque couche communique uniquement avec la couche inférieure (respect du princ
 ---
 
 ## Base de données
-- **Script SQL** : `schema.sql` → création du schéma complet (utilisateur, staff, patient, cabinet_medicale, consultation, dossier_medical, etc.).  
-- **Jeu de données** : `seed.sql` → initialisation (patients, cabinets, rendez-vous, factures ...etc).  
+- **Script SQL** : `schema.sql` → création du schéma complet.  
+- **Jeu de données** : `seed.sql` → initialisation (patients, rendez-vous, factures ...etc).  
 - **Connexion JDBC** : paramètres stockés dans `db.properties`.
 
 **Exemple (db.properties)** :
@@ -121,16 +121,11 @@ db.password=
 ## 📁 Structure du code source
 Chaque package contient :
 - `entities` → POJOs (avec Lombok)
-- `repository` → Interfaces DAO + impl JDBC/file-based/in-memory
+- `repository` → Interfaces DAO + impl JDBC
 - `service` → Logique métier
 - `mvc` → Présentation (Swing)
 - `common` → Outils, exceptions, validateurs
 - `config` → Fabriques et contexte applicatif
-
-**Modules disponibles :**
-- ✅ Patient (gestion des patients)
-- ✅ Cabinet (gestion des cabinets médicaux)
-- ✅ Consultation (gestion des consultations)
 
 ---
 
@@ -199,31 +194,6 @@ Chaque package contient :
 | Étudiant 2 | ...  | ... |
 | Étudiant 3 | ...  | ... |
 | Étudiant 4 | ...  | ... |
-
----
-
-## 🆕 Développements récents
-
-### Modules Cabinet et Consultation
-**Auteur : Amine Charro**
-
-Ajout de deux nouveaux modules complets suivant l'architecture MVC existante :
-
-- **Module Cabinet** : Gestion complète des cabinets médicaux
-  - Repository (file-based et in-memory)
-  - Service layer avec DTO
-  - Contrôleurs (batch et Swing)
-  - Interface utilisateur Swing
-  - Schéma MySQL et données de test
-
-- **Module Consultation** : Gestion des consultations médicales
-  - Repository (file-based et in-memory)
-  - Service layer avec DTO
-  - Contrôleurs (batch et Swing)
-  - Interface utilisateur Swing
-  - Schéma MySQL avec relations aux dossiers médicaux
-
-Les deux modules respectent la même structure que le module Patient, avec support pour le stockage fichier (PSV) et base de données MySQL.
 
 ---
 

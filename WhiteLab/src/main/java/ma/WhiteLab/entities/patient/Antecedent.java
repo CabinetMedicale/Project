@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import ma.WhiteLab.entities.BaseEntity;
+import ma.WhiteLab.entities.enums.CategorieAntecedent;
 import ma.WhiteLab.entities.enums.NiveauDeRisk;
 
 @Data
@@ -16,7 +17,8 @@ import ma.WhiteLab.entities.enums.NiveauDeRisk;
 @EqualsAndHashCode(callSuper = true)
 public class Antecedent extends BaseEntity {
     private String description;
-    private String categorie;
+    private String nom;
+    private CategorieAntecedent categorie;
     private NiveauDeRisk niveauDeRisk;
 
     private List<Patient> patients;

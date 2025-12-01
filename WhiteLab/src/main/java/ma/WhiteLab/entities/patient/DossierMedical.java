@@ -21,7 +21,6 @@ import ma.WhiteLab.entities.prescription.Ordonnance;
 @EqualsAndHashCode(callSuper = true)
 public class DossierMedical extends BaseEntity {
     private String historique;
-    private Date dateCreation;
 
     private Patient pat;
     private Medecin medcine;

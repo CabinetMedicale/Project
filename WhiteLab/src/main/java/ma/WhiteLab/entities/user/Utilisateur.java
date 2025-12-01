@@ -16,6 +16,7 @@ import ma.WhiteLab.entities.enums.Sexe;
 @NoArgsConstructor
 @SuperBuilder
 @EqualsAndHashCode(callSuper = true)
+
 public abstract class Utilisateur extends BaseEntity {
     private String nom;
     private String prenom;

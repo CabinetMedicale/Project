@@ -8,11 +8,14 @@ public interface CrudRepository<T, ID> {
 
     T findById(ID id);
 
-    void create(T patient);
+    void create(T newElement);
 
-    void update(T patient);
+    void update(T newValuesElement);
 
     void delete(T patient);
 
     void deleteById(ID id);
 }
+
+
+
