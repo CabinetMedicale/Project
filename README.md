@@ -9,25 +9,26 @@ Application de bureau Java Swing pour la gestion complète d'un cabinet dentaire
 
 ## 🆕 Développements récents
 
-### Modules Cabinet et Consultation
-**Auteur : Amine Charro**
+## 🚀 Comment récupérer et travailler sur le projet (TRÈS IMPORTANT)
 
-Ajout de deux nouveaux modules complets suivant l'architecture MVC :
-- **Module Cabinet** : Gestion complète des cabinets médicaux (Repository, Service, Contrôleurs, UI Swing, MySQL)
-- **Module Consultation** : Gestion des consultations médicales (Repository, Service, Contrôleurs, UI Swing, MySQL)
+1. **Téléchargez obligatoirement la version complète ici :**  
+   ➡️ **WhiteLabv2.zip** *(lien partagé sur Teams/Google Drive de la classe)*
 
-Les deux modules respectent la même structure que le module Patient, avec support pour le stockage fichier (PSV) et base de données MySQL.
+2. Décompressez le ZIP → vous aurez la **structure complète et à jour** du projet IntelliJ (avec tous les modules déjà intégrés).
 
-## 📁 Modules disponibles
+3. **Avant de coder quoi que ce soit, revisitez OBLIGATOIREMENT les modules de chacun de nous** :  
+   - Ouvrez chaque package (`ma.emsi.whitelab.patient`, `ma.emsi.whitelab.cabinet`, `ma.emsi.whitelab.consultation`)  
+   - Étudiez l’ordre suivant dans **chaque** module :  
+     1. `Repository` (gestion interface + MySQL)  
+   → Cela vous évitera de casser l’architecture MVC et de refaire des erreurs déjà corrigées.
 
-- ✅ Patient (gestion des patients)
-- ✅ Cabinet (gestion des cabinets médicaux)
-- ✅ Consultation (gestion des consultations)
+4. **Testez TOUT après chaque modification** :  
+   - Lancez `TestMain.java`  
+   - Testez Patient, Cabinet et Consultation de A à Z  
+   - Vérifiez que les données s’enregistrent bien (fichiers .psv ou base MySQL)
 
-## 📖 Documentation complète
+Faites cela à chaque fois que vous récupérez le projet ou que quelqu’un pousse du code.  
+C’est la seule façon de travailler proprement en équipe sur WhiteLab v2.
 
-Voir le fichier `WhiteLab/src/main/resources/readMe.md` pour la documentation détaillée.
-
----
-
+Bon courage à tous !
 © 2025 – **WhiteLab | EMSI Rabat**
